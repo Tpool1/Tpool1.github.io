@@ -37,11 +37,10 @@ contact {
 
 footer {
   text-align: center;
-  padding: 3px;
   background-color: rgb(22, 154, 161);
   color: white;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 99%;
   height: 2.5rem;
 }
