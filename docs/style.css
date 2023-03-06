@@ -1,24 +1,26 @@
 ul {
     list-style-type: none;
     margin: auto;
-    width: 24%;
     padding: 10px;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(22, 154, 161);
+    border-radius: 10px;
   }
   
   li {
     float: left;
+    display: inline;
+    padding: 3px 7px;
   }
   
   li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 25px;
     text-decoration: none;
-    border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   li a:hover:not(.active) {
@@ -26,5 +28,9 @@ ul {
   }
   
   .active {
-    background-color: rgb(189, 38, 38);
+    background-color: rgb(255, 255, 255);
   }
+
+contact {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
