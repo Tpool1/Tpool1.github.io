@@ -3,29 +3,60 @@
 <html> 
     <head>
         <title>Best Electric</title>
-        <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="cssReset.css">
+		<link rel="stylesheet" href="SlideShow.css">
+        <link rel="stylesheet" href="style.css">	
+		<style>
+			.mySlides {display:none;white-space: initial;padding: 100px 100px;}
+		</style>
     </head>
+	<body>
+		
+		<div class="rectangle"></div>
 
-    <body>
-        <ul>
-            <li>
-                <a class="active" href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+		<div class="header">
+			<a href="index.html" class="logo">Company Logo Best Electric</a>
+			<div class="header-right">
+				<a class="active" href="#home">Home</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+		</div>
+		
+		<div class="main">
+			
+			<h2 class="w3-center">Automatic Slideshow</h2>
 
-        <p>
-            *Example*
-        </p>
-    </body>
+			<div class="w3-contentw3-section" style="max-width:500px">
+				<img class="mySlides" src="test.jpeg" style="width:1800px; height:523px; float:left; left:-100px; display:block; left">
+				<img class="mySlides" src="test.jpeg" style="width:250%">
+				<img class="mySlides" src="test.jpeg" style="width:250%">
+			</div>
 
-    <footer>
-        *Copyright info, etc.*
-    </footer>
+			<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 10000000000000); // Change image every 2 seconds
+			}
+			
+			</script>
+			
+		</div>
+		
+		<footer>
+			<p>*Copyright info, etc.*</p>
+		</footer>
+	</body>
 
 </html>
