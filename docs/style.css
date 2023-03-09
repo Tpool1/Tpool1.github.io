@@ -2,12 +2,6 @@
 	--MainColor: #00ABE4;
 }
 
-{
-  margin: 0;
-  overflow-x: hidden;
-  display: block;
-}
-
 /* Small rectangle for contrast */
 .rectangle{
     width:1920px;
